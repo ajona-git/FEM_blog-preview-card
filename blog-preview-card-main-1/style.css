@@ -74,7 +74,17 @@ body {
     color: var(--clr-off-black);
     padding:.5rem 1.5rem;
 }
-
+.blog-title a{
+    text-decoration: none;
+    color: var(--clr-off-black);
+}
+.blog-title a:hover{
+    text-decoration: none;
+    color: var(--clr-yellow);
+}
+span:hover{
+    color: var(--clr-yellow);
+}
 .author-details {
     padding: 1rem 1.5rem;
     display: flex;
@@ -105,5 +115,14 @@ body {
     display: grid;
     place-items: center;
     min-height:100dvh;
+
+}
+@media (max-width:785px){
+    :root{
+       --fs-heading:1.4rem;
+    }
+    .blog-wrapper {
+        width: 20em;
+    }
 
 }
